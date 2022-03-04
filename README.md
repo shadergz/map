@@ -6,9 +6,6 @@ The hashmap algorithm consist of a bucket with a pair of key and values and a ha
 
 > Some implementations added a Linked List to solve the Hash Collision problem
 
-<!--
-    https://en.wikipedia.org/wiki/Hash_table#/media/File:Hash_table_3_1_1_0_1_0_0_SP.svg
--->
 ![Alt text](https://upload.wikimedia.org/wikipedia/commons/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg)
 
 ## How to build this project
@@ -27,6 +24,8 @@ cmake ..
 ./map 2> /dev/null
 ```
 
+## Dev information
+
 > The default hash algorithm
 
 ```c
@@ -43,4 +42,3 @@ unsigned long djb2_hash (unsigned char *str)
     return hash;
 }
 ```
-
