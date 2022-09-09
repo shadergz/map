@@ -38,7 +38,7 @@ extern const char* hashmap_value (const char* key, hashmap_t* map);
 /* Clear all bucket array and make all positions available to be reused */
 extern void hashmap_clear (hashmap_t* map);
 
-/* Use the user hash function intead of the Dan (djb2) algorithm 
+/* Use the user hash function instead of the Dan (djb2) algorithm 
  * (If u think that your algorithm is better, go ahead)
 */
-extern void hashmap_hash (hashfunc_t hash_func, hashmap_t* map);
+__attribute__((unused)) extern void hashmap_hash (hashfunc_t hash_func, hashmap_t* map);

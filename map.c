@@ -70,7 +70,7 @@ void hashmap_push (const char* key, const char* value, hashmap_t* map)
 
         bucket->available = 0;
     } else {
-        fprintf (stderr, "This bucket is alredy in use by the %s key\n", bucket->key);
+        fprintf (stderr, "This bucket is already in use by the %s key\n", bucket->key);
     }
 }
 
@@ -86,7 +86,7 @@ const char* hashmap_value (const char* key, hashmap_t* map)
         if (strlen (key) == strlen (bucket->key) && (!(strcmp (key, bucket->key))))
             value = bucket->value;
         else
-            value = "A colision has ocurred";
+            value = "A collision has ocurred";
     } else {
         value = "Bucket isn't available";
     }
